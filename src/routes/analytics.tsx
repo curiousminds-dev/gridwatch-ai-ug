@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AnalyticsPage } from "@/components/gridsense-pages";
+export const Route = createFileRoute("/analytics")({ head: () => ({ meta: [{ title: "Grid Analytics | GridSense AI" }, { name: "description", content: "Reliability and fault prevention analytics for grid operations." }, { property: "og:title", content: "Grid Analytics | GridSense AI" }, { property: "og:description", content: "Reliability and fault prevention analytics for grid operations." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AnalyticsPage });

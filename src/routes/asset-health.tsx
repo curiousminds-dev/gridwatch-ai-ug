@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AssetHealthPage } from "@/components/gridsense-pages";
+export const Route = createFileRoute("/asset-health")({ head: () => ({ meta: [{ title: "Asset Health | GridSense AI" }, { name: "description", content: "Predictive health monitoring for Uganda's connected grid assets." }, { property: "og:title", content: "Asset Health | GridSense AI" }, { property: "og:description", content: "Predictive health monitoring for Uganda's connected grid assets." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AssetHealthPage });

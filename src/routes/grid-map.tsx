@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { GridMapPage } from "@/components/gridsense-pages";
+export const Route = createFileRoute("/grid-map")({ head: () => ({ meta: [{ title: "Uganda Grid Map | GridSense AI" }, { name: "description", content: "Interactive map of monitored Ugandan substations and grid nodes." }, { property: "og:title", content: "Uganda Grid Map | GridSense AI" }, { property: "og:description", content: "Interactive map of monitored Ugandan substations and grid nodes." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: GridMapPage });
