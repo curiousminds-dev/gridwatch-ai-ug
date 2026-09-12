@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AlertsPage } from "@/components/gridsense-pages";
+export const Route = createFileRoute("/alerts")({ head: () => ({ meta: [{ title: "Active Alerts | GridSense AI" }, { name: "description", content: "Prioritized live alerts for Uganda's electrical grid." }, { property: "og:title", content: "Active Alerts | GridSense AI" }, { property: "og:description", content: "Prioritized live alerts for Uganda's electrical grid." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: AlertsPage });
